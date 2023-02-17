@@ -1,0 +1,8 @@
+@font-face {
+    font-family: NatureBeauty;
+    src: url("NatureBeautyPersonalUse-9Y2DK.ttf");
+}
+p{
+    font-family: NatureBeauty;
+    color: darkred;
+}

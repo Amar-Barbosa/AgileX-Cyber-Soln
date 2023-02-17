@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="table.css">
+    <title>Table Task</title>
+    <style>
+table,tr,th,td{
+    border:1px solid black;
+    border-collapse: collapse;
+}
+    </style>
+</head>
+
+<body>
+    <caption  > A test table with merged cells</caption>
+    <table class="tableborder">
+        <tr>
+            <th rowspan="2"></th>
+            <th colspan="2">Average</th>        
+            <th rowspan="2" class="one">Red <p class="two">eyes</p></th>
+        </tr>
+        <tr><th colspan="1">height</th>
+            <th colspan="1">weight</th></tr>
+        <tr>
+            <th>Males</th>
+            <td class="data">1.9</td>
+            <td class="data">0.003</td>
+            <td class="data">40%</td>
+        </tr>
+        <tr>
+            <th>Females</th>
+            <td class="data">1.7</td>
+            <td class="data">0.002</td>
+            <td class="data">43%</td>
+        </tr>
+</table>
+</body>
+
+</html>

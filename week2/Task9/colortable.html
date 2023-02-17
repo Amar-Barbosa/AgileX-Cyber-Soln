@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ColorTable</title>
+    <link rel="stylesheet" href="colortable.css">
+    <style>
+table,tr,th,td{
+    border:1px solid black;
+    width: 600px;
+}
+    </style>
+</head>
+<body>
+    <caption>Timetable</caption>
+   <table>
+    <tr>
+        <th rowspan="3">day</th>
+        <th colspan="3">Seminar</th>
+    </tr>
+    <tr>
+        <th colspan="2">Schedule</th>
+        <th rowspan="2">Topic</th>
+    </tr>
+        <tr>
+            <th>Begin</th>
+            <th>End</th>
+        </tr>
+        <tr>
+        <td rowspan="2">Monday</td>
+        <td rowspan="2" class="yellow">8:00 a.m</td>
+        <td rowspan="2" class="violet">5:00 pm</td>
+        <td >Introduction to XML</td>
+        </tr>
+        <tr><td >Validity: DTD and Relax NG</td></tr>
+        <tr>
+            <td rowspan="3">Tuesday</td>
+            <td class="yellow">8:00 a.m</td>
+            <td class="yellow">11:00 a.m</td>
+            <td rowspan="2">XPATH</td>
+        </tr>
+        <tr>
+            <td class="yellow">11:00 a.m</td>
+            <td class="green">2:00 p.m</td>
+        </tr>
+        <tr>
+            <td class="green">2:00 p.m</td>
+            <td class="violet">5:00 pm</td>
+            <td >XSL Transformation</td>
+        </tr>
+        <tr>
+            <td>Wednesday</td>
+            <td class="yellow">8:00 a.m</td>
+            <td class="green">12:00 pm</td>
+            <td>XSL Formatting Objects</td>
+        </tr>
+     </table>
+</body>
+</html
