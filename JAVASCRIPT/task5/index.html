@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <ol>
+        <li><a href="#" onclick="say(this)">Navin</a></li>
+        <li><a href="#" onclick="say(this)">Abi</a></li>
+        <li><a href="#" onclick="say(this)">Jeevi</a></li>
+        <li><a href="#" onclick="say(this)">Ananth</a></li>
+        <li><a href="#" onclick="say(this)">Bespin</a></li>
+        <li><a href="#" onclick="say(this)">Vengadesh</a></li>
+        <li><a href="#" onclick="say(this)">Vennih Bro</a></li>
+        <li><a href="#" onclick="say(this)">Amar</a></li>
+        <li><a href="#" onclick="say(this)">Sanju</a></li>
+        <li><a href="#" onclick="say(this)">Attul</a></li>
+    </ol>
+</body>
+
+<script>
+    const list = document.getElementsByTagName("a");
+    var arr = [];
+    for (let i = 0; i < list.length; i++) {
+        arr.push(list[i].innerHTML);
+    }
+    function say(element) {
+        let i = arr.indexOf(element.innerHTML);
+        if (i % 2 === 0) {
+            element.style.color = "red";
+        } else {
+            element.style.color = "green";
+        };
+    }
+</script>
+</body>
+</html>

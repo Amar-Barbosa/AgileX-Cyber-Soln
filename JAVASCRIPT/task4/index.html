@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a href="#" onclick="changeBGcolor(this)">Amar</a></li>
+        <li><a href="#" onclick="changeBGcolor(this)">Navin</a></li>
+        <li><a href="#" onclick="changeBGcolor(this)">Abinesh</a></li>
+        <li><a href="#" onclick="changeBGcolor(this)">Bespin</a></li>
+        <li><a href="#" onclick="changeBGcolor(this)">Jeevi</a></li>
+        <li><a href="#" onclick="changeBGcolor(this)">Ananth</a></li>
+        <li><a href="#" onclick="changeBGcolor(this)">Attul</a></li>
+        <li><a href="#" onclick="changeBGcolor(this)">Sanju</a></li>
+        <li><a href="#" onclick="changeBGcolor(this)">Vengadesh</a></li>
+        <li><a href="#" onclick="changeBGcolor(this)">Vennih bro</a></li>
+    </ul>
+</body>
+
+
+<script>
+    function changeBGcolor(element) {
+        const name = element.innerHTML;
+        const firstletter = name.charAt(0).toLowerCase();
+        if (firstletter === ('a' || 'e' || 'i' || 'o' || 'u')) {  //vowels=a,e,i,o,u
+            element.style.backgroundColor = "red";
+        } else {
+            element.style.backgroundColor = "green";
+        }
+    }
+</script>
+
+</html>
