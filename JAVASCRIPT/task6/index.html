@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100%;
+        }
+
+        button {
+            display: block;
+            margin: auto;
+        }
+
+        table {
+            margin: auto;
+            border-collapse: collapse;
+            border: 2px solid black;
+        }
+
+        td:nth-child(2) {
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <button onclick="myFunction()">CHANGE COLOR</button>
+    </div>
+    <div>
+            <p>RED
+            <span id="red">0</span></p>
+            <p>GREEN
+            <span id="green">0</span></p>
+       
+            <p>BLUE
+            <span id="blue">0</span></p>
+       
+            <p>YELLOW
+            <span id="yellow">0 </span></p>
+       
+            <p>PINK
+            <span id="pink">0</span></p>
+       
+            <p>BROWN
+            <span id="brown">0</span></p>
+        
+            <p>PURPLE
+            <span id="purple">0</span></p>
+       
+            <p>ORANGE
+            <span id="orange">0</span></p>
+        
+            <p>GREY
+            <span id="grey">0</span></p>
+       
+            <p>TOMATO
+            <span id="tomato">0</span></p>
+       </div>
+</body>
+<script>
+    const colors = ["red", "green", "blue", "yellow", "pink", "brown", "purple", "orange", "grey", "tomato"];
+    let obj = {
+        red: 0, green: 0, blue: 0, yellow: 0, pink: 0, brown: 0, purple: 0, orange: 0, grey: 0, tomato: 0
+    }
+    console.log(obj);
+
+    function myFunction() {
+        let color = colors[Math.floor(Math.random() * colors.length)];
+        document.body.style.backgroundColor = color;
+        
+        switch (color) {
+            case "red":
+                obj.red = parseInt(obj.red) + 1;
+                document.getElementById("red").innerHTML = obj.red;
+                break;
+            case "green":
+                obj.green = parseInt(obj.green) + 1;
+                document.getElementById("green").innerHTML = obj.green;
+                break;
+            case "blue":
+                obj.blue = parseInt(obj.blue) + 1;
+                document.getElementById("blue").innerHTML = obj.blue;
+                break;
+            case "yellow":
+                obj.yellow = parseInt(obj.yellow) + 1;
+                document.getElementById("yellow").innerHTML = obj.yellow;
+                break;
+            case "pink":
+                obj.pink = parseInt(obj.pink) + 1;
+                document.getElementById("pink").innerHTML = obj.pink;
+                break;
+            case "brown":
+                obj.brown = parseInt(obj.brown) + 1;
+                document.getElementById("brown").innerHTML = obj.brown;
+                break;
+            case "purple":
+                obj.purple = parseInt(obj.purple) + 1;
+                document.getElementById("purple").innerHTML = obj.purple;
+                break;
+            case "orange":
+                obj.orange = parseInt(obj.orange) + 1;
+                document.getElementById("orange").innerHTML = obj.orange;
+                break;
+            case "grey":
+                obj.grey = parseInt(obj.grey) + 1;
+                document.getElementById("grey").innerHTML = obj.grey;
+                break;
+            default:
+                obj.tomato = parseInt(obj.tomato) + 1;
+                document.getElementById("tomato").innerHTML = obj.tomato;
+                break;
+        }
+    }
+</script>
+
+</html>

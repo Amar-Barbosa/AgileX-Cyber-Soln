@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <form onsubmit="return false">
+        <div class="field">
+            <label for="from">Range From<span>:</span></label>
+            <input type="number" name="from" id="from">
+        </div>
+        <div class="field">
+            <label for="to">Range To<span>:</span></label>
+            <input type="number" name="to" id="to">
+        </div>
+        <div class="field">
+            <label for="divide">Divisible Value<span>:</span></label>
+            <input type="number" name="divisible" id="divide">
+        </div>
+        <button onclick="myFunction()">Enter</button>
+    </form>
+
+    <p id="ans"></p>
+</body>
+<script>
+    function myFunction() {
+        // Get value from "Range from" 
+        var from = document.getElementById("from").value;
+        // Get value from "Range to" 
+        var to = document.getElementById("to").value;
+        // Get value from "Divisible" 
+        var divisible = document.getElementById("divide").value;
+        // Create empty array to store the divisible value
+        var arr = [];
+        for (let i = from; i <= to; i++) {
+            if (i % divisible == 0) {
+                arr.push(i);//when remainder is 0 then push i and store it in arr
+            }
+        }
+        // display the answer which stored in arr
+        document.getElementById("ans").innerHTML = arr;
+    }
+
+</script>
+
+</html>
