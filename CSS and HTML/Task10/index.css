@@ -1,0 +1,83 @@
+.container{
+    background-color: white;
+    display: grid;
+    gap: 10px;
+    width: 100%;
+  }
+  .one{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+    
+  }
+  .lightblue{
+    background-color: lightblue;
+    height: 90px;
+  }
+  .brown{
+    background-color: brown;
+    height: 90px;
+  }
+  .two{
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: orange;
+    height: 140px;
+  }
+  .three{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+  }
+  .green{
+    background-color: green;
+    height: 90px;
+  }
+  .lightpink{
+    background-color: lightpink;
+    height: 90px;
+  }
+  .pink{
+    background-color: pink;
+    height: 90px;
+  }
+  .four{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .gray{
+    background-color: gray;
+    height: 100px;
+  }
+  .lightgreen{
+    background-color: lightgreen;
+    height: 100px;
+  }
+  .five{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+  }
+  .lightcoral{
+    background-color: lightcoral;
+    height: 50px;
+  }
+  .blue{
+    background-color:blue;
+    height: 50px;
+  }
+  .black{
+    background-color: black;
+    height: 50px;
+  }
+  .violet{
+    background-color: violet;
+    height: 50px;
+  }
+  .six{
+    display: grid;
+    gap: 10px;
+    background-color: yellow;
+    height: 25px;
+  }

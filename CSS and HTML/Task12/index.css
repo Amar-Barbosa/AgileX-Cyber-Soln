@@ -1,0 +1,84 @@
+body{
+    font-family: sans-serif, 'Arial Narrow', Arial;
+    color: white;
+}
+.main {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.left {
+    position: relative;
+    width: 50px;
+    height: 100%;
+    top: 50px;
+}
+
+.right {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.left>div {
+    width: 100%;
+    height: 50%;
+    transform: rotate(-180deg);
+    writing-mode: vertical-lr;
+    border-radius:  0 20px 20px 0;
+}
+.heading {
+    display: flex;
+    width: 50%;
+}
+
+.heading>div {
+    width: 50%;
+    height: 50px;
+    margin: 0 40px;
+    border-radius: 20px 20px 0 0;
+}
+
+.container {
+    width: 50%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+}
+
+.do {
+    background-color: coral;
+    border-radius: 20px 20px 0 20px;
+}
+
+.plan {
+    background-color: green;
+    border-radius: 20px 20px 20px 0;
+}
+
+.delegate {
+    background-color: yellow;
+    border-radius: 20px 0 20px 20px;
+}
+
+.eliminate {
+    background-color: blue;
+    border-radius: 0 20px 20px 20px;
+}
+.do,
+.plan,
+.delegate,
+.eliminate {
+    text-align: center;
+    font-size: 25px;
+    padding: 100px;
+}
+.left>div,
+.heading>div {
+    font-size: 20px;
+    text-align: center;
+    background-color: grey;
+    line-height: 50px;
+}

@@ -1,0 +1,22 @@
+@media only screen and (min-width:501px) and (max-width:768px) {
+    .one{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .two{
+        grid-template-columns: 1fr;
+    }
+    .three{
+        grid-template-columns: 1fr;
+    }
+    .five{
+        grid-template-columns: 1fr 1fr;
+    }
+  }
+  /* CSS for Mobile */
+  @media only screen and (max-width:500px){
+    .container > *{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+  }
